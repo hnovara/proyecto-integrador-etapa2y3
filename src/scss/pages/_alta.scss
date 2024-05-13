@@ -1,0 +1,30 @@
+.alta__container {
+    width: 100%;
+    .alta__container__sec {
+        align-items: left;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        border: 0.25rem solid $success-color;
+        border-radius: 1.5rem;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+        flex-direction: row;
+        padding: 2rem 10%;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+        margin: 3% 10%;
+        & h2 {
+            text-align: center;
+        }
+        & textarea {
+            min-height: 7rem;
+            resize: none;
+        }
+        @media screen and (min-width: 768px) {
+            padding: 2rem 10%;
+        }
+    }
+}
+
+

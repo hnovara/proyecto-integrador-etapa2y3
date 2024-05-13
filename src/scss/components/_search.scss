@@ -1,0 +1,22 @@
+.search-bar {
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+  
+    .search-input {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 2px solid $success-color;
+      transition: border-color 0.15s ease-in-out;
+      text-align: center;
+      width: 100%;
+      
+      &:focus {
+        outline: none;
+        border: 2px solid $error-color;
+      }
+      &:hover {
+          background-color: #efefefd4;
+      }
+    }
+  }
