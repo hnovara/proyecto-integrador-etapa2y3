@@ -1,8 +1,13 @@
+
+// const axiosInstance = axios.create({
+//     // baseURL: "https://65fdc6bab2a18489b38566f7.mockapi.io/api/"
+//     baseURL: "http://localhost:3001/api/"
+// })
+
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    // baseURL: "https://65fdc6bab2a18489b38566f7.mockapi.io/api/"
-    baseURL: "http://localhost:3001/api/"
+    baseURL: process.env.REACT_APP_BASE_URL_API
 })
 
 export const getProducts = async () => {
@@ -25,6 +30,20 @@ export const postProducts = async body => {
           'Content-Type': 'multipart/form-data'
         }
     })
-    
+    return resp.data;
+}
+
+export const postCart = async body => {
+    const resp = await axiosInstance.post("/cart", {items: body})
+    return resp.data;
+} 
+
+export const editCart = async (id, body) => {
+    const resp = await axiosInstance.put(`/cart/edit/${id}`, {items: body})
+    return resp.data;
+} 
+
+export const getCart = async id => {
+    const resp = await axiosInstance.get(`/cart/get/${id}`)
     return resp.data;
 } 

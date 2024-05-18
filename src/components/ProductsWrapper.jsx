@@ -27,7 +27,7 @@ function ProductsWrapper() {
             <label htmlFor="search" hidden>Buscar</label>
             <div className="search-bar">
                 <input 
-                    id="search"
+                    _id="search"
                     name="search"
                     type="text"
                     className="search-input"
