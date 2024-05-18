@@ -2,7 +2,7 @@ import React from 'react'
 import Counter from './Counter'
 
 function Card({
-    id,
+    _id,
     name,
     // img,
     imgUrl,
@@ -28,7 +28,7 @@ function Card({
                 $ {price}
             </div>
             <Counter 
-                id={id}
+                _id={_id}
                 movieData={{
                     name,
                     // img,

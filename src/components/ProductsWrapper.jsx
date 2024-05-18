@@ -39,7 +39,7 @@ function ProductsWrapper() {
             <div className="card__wrapper">
                 {filteredProducts.map(product => (
                     <Card
-                        key={product.id}
+                        key={product._id}
                         {...product}
                     />
                 ))}
