@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { bool, element } from 'prop-types'
 
-function Modal({ children, show, onClose }) {
+function Modal({children, show, onClose}) {
 
     const modalRef = useRef()
 
@@ -10,7 +10,7 @@ function Modal({ children, show, onClose }) {
             modalRef.current.focus()
         }
     }, [show])
-
+    
     const handleKeyPress = e => {
         if (e.key === "Escape") {
             onClose()
@@ -19,11 +19,12 @@ function Modal({ children, show, onClose }) {
 
     return (
         show ? (
-            <div className='modal__overlay'>
+            <div className='modal__overlay' onClick={onClose} >
                 <div
-                    ref={modalRef}
-                    className='modal__container'
+                    ref={modalRef} 
+                    className='modal__container' 
                     tabIndex="0"
+                    onClick={e => e.stopPropagation()}
                     onKeyDown={handleKeyPress}>
                     {children}
                 </div>

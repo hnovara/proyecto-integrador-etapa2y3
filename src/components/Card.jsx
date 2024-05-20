@@ -1,6 +1,6 @@
 import React from 'react'
 import Counter from './Counter'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function Card({
     _id,
@@ -18,7 +18,7 @@ function Card({
     return (
 
         <div className="card__container">
-            <Link to={`/detail/${_id}`} >
+            {/* <Link to={`/detail/${_id}`} > */}
                 <div className='card__data'>
                     <h2>{name}</h2>
                     {/* <img src={img} alt={shortDesc} /> */}
@@ -29,7 +29,7 @@ function Card({
                 <div className="card__price">
                     $ {price}
                 </div>
-            </Link>
+            {/* </Link> */}
             <Counter _id={_id}/>
         </div>
     )
