@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     .card__container {
         background-color: $success-color;
         border-radius: 0.75rem;
@@ -13,35 +14,41 @@
         position: relative;
         text-align: center;
         width: 14rem;
+
         &:hover {
             box-shadow: 2px 2px 2px 2px $primary-color;
         }
+
         .card__data {
             padding: 0.5rem;
         }
+
         img {
             border-radius: 0.25rem;
             box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.2);
             width: 100%;
+            height: 11rem; 
+            object-fit: cover; 
         }
+
         h2 {
             padding-top: 0;
             font-size: $font-size-lg;
         }
+
         p {
             color: $primary-color;
         }
+
         .card__price {
             position: absolute;
             bottom: 4rem;
-            font-weight: 800; 
+            font-weight: 800;
             left: 4.5rem;
         }
+
         b {
             font-size: $font-size-md;
         }
     }
-
 }
-  
-  
