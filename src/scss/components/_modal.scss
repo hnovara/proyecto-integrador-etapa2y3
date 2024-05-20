@@ -35,6 +35,19 @@
         &:focus {
             outline: none; 
         }
+        .modal__footer {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .modal__btn-buy {
+                background-color: $error-color;
+                border: none;
+                border-radius: 0.25rem;
+                color: $white;
+                margin: 1rem;
+                padding: 0.5rem;
+            }
+        }
     }
 
     @media (min-width: 768px) {

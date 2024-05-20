@@ -53,7 +53,6 @@ function Cart() {
                     }
                     <div className="modal__footer">
                         <Button
-                            icon={faDollar}
                             className="modal__btn-buy"
                             label="Comprar"
                             action={() => {
