@@ -1,3 +1,45 @@
+# Proyecto-integrdor-etapa2y3
+
+## Tecnologías
+
+Esta es la parte del front-end del proyecto integrador, desarrollado con Create React App, Axios y Sass. 
+
+Se instalaron las siguientes librerías:
+
+@fortawesome, para proporcionar un conjunto amplio de iconos vectoriales y fuentes.
+
+Axios, para facilitar la comunicación con APIs, permitiendo realizar peticiones GET, POST, PUT, DELETE, entre otras, de manera sencilla y manejando las respuestas y errores.
+
+React, para crear componentes reutilizables que permiten construir aplicaciones web de una sola página (SPA) de manera eficiente y modular, gestionando el estado y el DOM de forma reactiva.
+
+React-dom, para facilitar la interacción entre React y el DOM del navegador, permitiendo montar y actualizar componentes React en el DOM.
+
+React-router-dom, para gestionar la navegación y las rutas dentro de una aplicación React, permitiendo la creación de interfaces de usuario con múltiples vistas y un historial de navegación.
+
+React-scripts, para simplificar la configuración inicial y el manejo del entorno de desarrollo para aplicaciones React, incluyendo compilación, pruebas, empaquetado y servidor de desarrollo.
+
+Web-vitals, para proporcionar herramientas para medir y reportar las métricas clave de rendimiento que afectan la experiencia del usuario.
+
+Sass, para facilitar la escritura y mantenimiento de estilos CSS más eficientes y organizados, permitiendo una mayor modularidad y reutilización de código en los estilos de las aplicaciones web.
+Se utilizó la lógica "7 en 1" de SASS la cual es una metodología de organización de archivos en proyectos que utilizan Sass. Esta estructura busca mejorar la mantenibilidad, la modularidad y la claridad del código CSS/Sass, dividiendo los estilos en diferentes categorías y archivos específicos.
+
+
+## Instalación
+
+El primer paso es instalar las dependencias, con el siguiente comando, dentro de la carpeta del proyecto:
+
+```
+npm install
+```
+
+Finalmente, ejecutar el siguiente comando para visualizar el proyecto en el navegador:
+```
+npm start
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
